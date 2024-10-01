@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { dataFake } from '../../data/dataFake';
 
 @Component({
@@ -16,7 +16,7 @@ export class ContentComponent implements OnInit{
   contentTitle:string = "";
   contentDescription:string = "";
 
-  constructor(private route:ActivatedRoute
+  constructor(private route:ActivatedRoute,  private router: Router
   ){}
   ngOnInit(): void {
     this.route.paramMap.subscribe(value =>

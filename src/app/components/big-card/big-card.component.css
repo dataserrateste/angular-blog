@@ -2,7 +2,7 @@
     margin-left: 20px;
     margin-right: 20px;
     width: 400px;
-    height: 500px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
